@@ -1,0 +1,1154 @@
+<!DOCTYPE html> 
+
+<html lang="en" > 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>DivHacks 2022</title>
+
+        <!-- STYLES -->
+        <link href="main.css" rel="stylesheet">
+
+
+        <link href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">  
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+        <!-- SCRIPTS -->
+
+        <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTF9R0G9CL"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-QTF9R0G9CL');
+        </script>
+    </head>
+
+    <div class="loader">
+      <div class="load-animation">
+        <div class="load-text">DivHacks 2022</div>
+        <div class="spinner-border text-light" role="status">
+          <span class="sr-only"></span>
+        </div>
+      </div>
+      
+    </div>
+
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
+    <img id="mascot" class="mable" src="images\mascots\mable-static.gif">
+
+    <body onload="loaderFade()">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
+            <div class="container-fluid nav-container-custom">
+              <a class="navbar-brand navbar-brand-custom" href="#">
+                <img id = "logo" src="images/logo.png" width="50" height="50">DivHacks
+              </a>
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+
+                  <a class="nav-link nav-link-custom active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link nav-link-custom" href="#about">About</a>
+                  <a class="nav-link nav-link-custom" href="#tracks">Tracks</a>
+                  <a class="nav-link nav-link-custom" href="https://docs.google.com/spreadsheets/d/1YGXhtxZSv3llhlxjmsZCI2Ni4VFm_aUd5TMvRpNqMcc/edit#gid=0" target="_blank">Schedule</a>
+                  <a class="nav-link nav-link-custom" href="#faq">FAQ</a>
+                  <a class="nav-link nav-link-custom" href="#sponsors">Sponsors</a>
+                  <a class="nav-link nav-link-custom" href="#speakers">Speakers</a>
+                  <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+                  <a class="nav-link nav-link-custom" href="#apply""><span class="btn-apply">Apply</span></a>
+             
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row" id="home">
+              <div class="col-2"></div>
+              <div class="col-8 content">
+                <img src="images/main-title.png" class="title-img floating" alt="title-image">
+                <h1 class="title-txt"><b>DIVHACKS X PALANTIR 2022<br>SEPT 23-24</b></h1>
+                <!--<p id="instruction" class="d-none d-lg-block">press 's' to switch characters<br>scroll to start</p>-->
+              </div>
+              <div class="col-2"></div>
+            </div>
+
+
+            <div class="row section" id="about">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 content">
+                <div class="bg-transparent-green reveal" id="about-text">
+                  <h2>
+                    <b>ABOUT DIVHACKS</b>
+                  </h2>
+                  <p>
+                    DivHacks, founded in 2017, is Columbia University's premier student-led annual diversity hackathon. Over the past four years, DivHacks has welcomed attendees from all over the tri-state area. We strive to create an empowering and inspirational space for students who are historically underrepresented in the tech industry.<br>Our goal is an experience that not only reimagines what diversity should look like in the tech industry but gives students the tools to use technology to implement change.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+
+            
+            <div class="row section" id="tracks">
+              <div id="tracks-container" class="col">
+                <h2><b>TRACKS</b></h2>
+                <div id="character-container">
+                  <!--<div id="close">x</div>-->
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">                        
+                        <div class="character-slide d-block">
+                          <img src="images/travelers/climate.png" class="character-img" alt="Climate Image">
+                          <div class="character-desc">
+                            <div class = "track-title">Climate Change</div>
+                            <div class = "track-text"> From rapidly shrinking ice cover to increased droughts and flooding, climate change has been creating lasting, irreversible harm to our planet. In this track, we invite you to create innovative solutions that reduce greenhouse gas emissions and energy consumption in order to fight global climate change.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="character-slide d-block">
+                          <img src="images/travelers/flora.png" class="character-img" alt="Flora Image">
+                          <div class="character-desc">
+                            <div class = "track-title">Flora & Fauna</div>
+                            <div class = "track-text">The earth’s rich diversity of flora and fauna is at the cornerstone of human wellbeing—providing food security, regulating the climate, and supplying cleaner air and water. Yet due to human activity, many species are in jeopardy of extinction now more than ever. In this track, we ask you to explore ways to protect and promote the biodiversity and health of our ecosystems.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="character-slide d-block">
+                          <img src="images/travelers/girl.png" class="character-img" alt="Lifestyle Image">
+                          <div class="character-desc">
+                            <div class = "track-title">Lifestyles</div>
+                            <div class = "track-text">Saving the planet starts with individuals adopting sustainable lifestyles. We want you to create solutions that guide individuals to move away from unsustainable habits and instead make healthier, more sustainable choices.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="character-slide d-block">
+                          <img src="images/travelers/smart.png" class="character-img" alt="Smart Cities Image">
+                          <div class="character-desc">
+                            <div class = "track-title">Smart Cities</div>
+                            <div class = "track-text">This track welcomes you to envision the future of cities—from smarter water management, more efficient transportation networks, to more energy-efficient ways to power buildings, we want you to lead the change toward more equitable, diverse, and sustainable cities.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="character-slide d-block">
+                          <img src="images/travelers/water.png" class="character-img" alt="Water Image">
+                          <div class="character-desc">
+                            <div class = "track-title">Water</div>
+                            <div class = "track-text">As a result of human unsustainable behavior, our planet’s viable freshwater supply and marine ecosystems are in jeopardy. This track invites you to create more equitable and effective ways to manage water resources so that more people have access to safe drinking water, sanitation services, and are more resilient to water-related disasters.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <!--
+                <div class="bounce clickable" id="wanderer-container">
+                  <img id="wanderer" src="images/travelers/merchantWithSpeechBubble.png">
+                </div>
+              -->
+              </div>
+ 
+            </div>
+          
+
+          <!--
+          <div class="row section" id="tracks">
+            <h2><b>TRACKS</b></h2>
+            <div class="col-md-4 content" >
+              <div class="reveal">
+                <h3 class='text-center'><b>Climate Change</b></h3>
+                <div class="track-box">
+                  <img src="images/travelers/climate.png" class="track-img" alt="Climate Change Image">
+                  <div class="track-text">
+                    From rapidly shrinking ice cover to increased droughts and flooding, climate change has been creating lasting, irreversible harm to our planet. In this track, we invite you to create innovative solutions that reduce greenhouse gas emissions and energy consumption in order to fight global climate change.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 content" >
+              <div class="reveal">
+                <h3 class='text-center'><b>Flora & Fauna</b></h3>
+                <div class="track-box">
+                  <img src="images/travelers/flora.png" class="track-img" alt="Flora and Fauna Image">
+                  <div class="track-text">
+                    The earth’s rich diversity of flora and fauna is at the cornerstone of human wellbeing—providing food security, regulating the climate, and supplying cleaner air and water. Yet due to human activity, many species are in jeopardy of extinction now more than ever. In this track, we ask you to explore ways to protect and promote the biodiversity and health of our ecosystems.                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        -->
+<!--                 
+            <div class="row section" id="schedule">
+              <div id="schedule-container" class="col">
+                <h2><b>HACKATHON SCHEDULE</b></h2>
+                <div id="schedule-character-container">
+                  <div id="scheduleSlide" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#scheduleSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#scheduleSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#scheduleSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#scheduleSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#scheduleSlide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#scheduleSlide" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">  
+                        <div class="schedule-slide d-block">                   
+                        <div class="schedule-timetable-header">
+                          <div class="schedule-timetable-header-column --timeline"></div>
+                          <div class="schedule-timetable-header-column day-1 --room"><h3>🌅 Day 1: Sep. 23 (Fri)</h3></div>
+                        </div>
+                        <div class="schedule-timetable-body">
+                          <div class="timeline" style="grid-row: 1 / 3"><p style="color:white;"> 09:00 </p></div>
+                          <div class="timeline" style="grid-row: 3 / 6"><p style="color:white;"> 09:30 </p></div>
+                          <div class="timeline" style="grid-row: 6 / 8"><p style="color:white;"> 10:00 </p></div>
+                          <div class="timeline" style="grid-row: 8 / 19"><p style="color:white;"> 10:30 </p></div>
+                          <div class="timeline" style="grid-row: 19 / 20"><p style="color:white;"> 11:00 </p></div>
+                          <div class="timeline" style="grid-row: 20 / 21"><p style="color:white;"> 11:30 </p></div>
+                          <div class="timeline" style="grid-row: 21 / 22"><p style="color:white;"> 12:00 </p></div>
+                          <div class="timeline" style="grid-row: 23 / 24"><p style="color:white;"> 13:00 </p></div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 1 / 3">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title">Check In &amp; Breakfast</div>
+                            </div>
+                            <div class="time">
+                                    09:00 ~ 09:30
+                                  </div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 3 / 7">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Opening Ceremony</div>
+                            </div>
+                            <div class="time">
+                                    09:30 ~ 10:15
+                                  </div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 7 / 19">
+                            <a class="keynote-event localed-url" href="#Agrawal">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Keynote: Sunil Agrawal</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner-friendly</span>
+                              <span class="remote-label">#softwaredev</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    10:15 ~ 11:00
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 19 / 21">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title">Team Formation</div>
+                            </div>
+                            <div class="time">
+                                    11:00 ~ 11:30
+                                  </div>
+                            </div>
+                            </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-1" style="grid-row: 21 / 24">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title"><br>LUNCH</div>
+                            </div>
+                            <div class="time">
+                                    12:00 ~ 13:00
+                                  </div>
+                            </div>
+                            </div>
+                          </div>
+                         
+                          <div class="schedule-timetable-body-item event-2" style="grid-row: 21 / 22">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: LinkedIn</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner</span>
+                              <span class="remote-label">#career</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    12:00 ~ 12:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+                            
+                        </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item ">  
+                        <div class="schedule-slide d-block">                   
+                        <div class="schedule-timetable-header">
+                          <div class="schedule-timetable-header-column --timeline"></div>
+                          <div class="schedule-timetable-header-column day-1 --room"><h3>🌄 Day 1: Sep. 23 (Fri)</h3></div>
+                        </div>
+                        <div class="schedule-timetable-body">  
+                          <div class="timeline" style="grid-row: 1 / 3"><p style="color:white;"> 13:00 </p></div>
+                          <div class="timeline" style="grid-row: 3 / 5"><p style="color:white;"> 13:30 </p></div>
+                          <div class="timeline" style="grid-row: 5 / 7"><p style="color:white;"> 14:00 </p></div>
+                          <div class="timeline" style="grid-row: 7 / 9"><p style="color:white;"> 14:30 </p></div>
+                          <div class="timeline" style="grid-row: 9 / 11"><p style="color:white;"> 15:00 </p></div>
+                          <div class="timeline" style="grid-row: 11 / 12"><p style="color:white;"> 15:30 </p></div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 1 / 3">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: Git / GitHub</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner</span>
+                              <span class="remote-label">#python</span>
+                              <span class="remote-label">#web-application</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    13:00 ~ 13:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 3 / 5">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: Web Development</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    13:30 ~ 14:00
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 5 / 7">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: UI / UX</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    14:00 ~ 14:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 7 / 9">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title">Palantir Product Demo</div>
+                            </div>
+                            <div class="time">
+                                    14:30 ~ 15:00
+                                  </div>
+                            </div>
+                            </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 9 / 11">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: AI / ML</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    15:00 ~ 15:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 11 / 13">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: Neuroscience</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    15:30 ~ 16:00
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item ">  
+                        <div class="schedule-slide d-block">                   
+                        <div class="schedule-timetable-header">
+                          <div class="schedule-timetable-header-column --timeline"></div>
+                          <div class="schedule-timetable-header-column day-1 --room"><h3>🌇 Day 1: Sep. 23 (Fri)</h3></div>
+                        </div>
+                        <div class="schedule-timetable-body">  
+                          <div class="timeline" style="grid-row: 1 / 3"><p style="color:white;"> 16:00 </p></div>
+                          <div class="timeline" style="grid-row: 3 / 5"><p style="color:white;"> 16:30 </p></div>
+                          <div class="timeline" style="grid-row: 5 / 7"><p style="color:white;"> 17:00 </p></div>
+                          <div class="timeline" style="grid-row: 7 / 9"><p style="color:white;"> 17:30 </p></div>
+                          <div class="timeline" style="grid-row: 9 / 11"><p style="color:white;"> 18:00 </p></div>
+                          <div class="timeline" style="grid-row: 12 / 13"><p style="color:white;"> 19:00 </p></div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 1 / 3">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: Pandas</div>
+                            </div>
+                            <div class="time">
+                                    16:00 ~ 16:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 3 / 5">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Fun &amp; Challenge: !Light MLH</div>
+                            </div>
+                            <div class="time">
+                                    16:30 ~ 17:00
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 5 / 7">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: DevOps</div>
+                            </div>
+                            <div class="time">
+                                    17:00 ~ 17:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 7 / 9">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: Dance Workshop</div>
+                            </div>
+                            <div class="time">
+                                    17:30 ~ 18:00
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-1" style="grid-row: 9 / 13">
+                            <div class="custom-event">
+                              <div class="context-container">
+                              <div class="context">
+                              <div class="title">DINNER</div>
+                              </div>
+                              <div class="time">
+                                      18:00 ~ 19:00
+                                    </div>
+                              </div>
+                              </div>
+                          </div>
+                          <div class="schedule-timetable-body-item event-2" style="grid-row: 9 / 13">
+                            <a class="keynote-event localed-url" href="">
+                              <div class="context-container">
+                              <div class="room">
+                              <div class="room-tag room-2-all"></div>
+                              </div>
+                              <div class="context">
+                              <div class="title">Panel: CS Professionals</div>
+                              </div>
+                              <div class="time">
+                                      18:00 ~ 19:00
+                                    </div>
+                              </div>
+                            </a>
+                          </div>
+
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item ">  
+                        <div class="schedule-slide d-block">                   
+                        <div class="schedule-timetable-header">
+                          <div class="schedule-timetable-header-column --timeline"></div>
+                          <div class="schedule-timetable-header-column day-1 --room"><h3>🌆 Day 1: Sep. 23 (Fri)</h3></div>
+                        </div>
+                        <div class="schedule-timetable-body">  
+                          <div class="timeline" style="grid-row: 1 / 5"><p style="color:white;"> 20:00 </p></div>
+                          <div class="timeline" style="grid-row: 5 / 9"><p style="color:white;"> 21:00 </p></div>
+                          <div class="timeline" style="grid-row: 9 / 12"><p style="color:white;"> 22:00 </p></div>
+                          <div class="timeline" style="grid-row: 14 / 16"><p style="color:white;"> 00:00 </p></div>
+                          <div class="timeline" style="grid-row: 16 / 19"><p style="color:white;"> 01:00 </p></div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 1 / 5">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Break: Columbia Scavenger Hunt</div>
+                            <div class="speaker"><span class="name">Team up and join the fun!</span></div>
+                            </div>
+                            <div class="time">
+                                    20:00 ~ 21:00
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 5 / 9">
+                            <a class="keynote-event localed-url" href="">
+                              <div class="context-container">
+                              <div class="room">
+                              <div class="room-tag room-2-all"></div>
+                              </div>
+                              <div class="context">
+                              <div class="title">Break: Sustainable Tote Bags</div>
+                              <div class="speaker"><span class="name">D.I.Y. Your Way to Sustainability</span></div>
+                              </div>
+                              <div class="time">
+                                      21:00 ~ 22:00
+                                    </div>
+                              </div>
+                              </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 9 / 13">
+                            <div class="custom-event">
+                              <div class="context-container">
+                              <div class="context">
+                              <div class="title">Spicy Ramen Challenge</div>
+                              </div>
+                              <div class="speaker"><span class="name" style="margin-bottom:4px">Let's Spice Things Up 🌶️</span></div>
+                              <div class="time">
+                                      22:00 ~ 23:00
+                                    </div>
+                              </div>
+                              </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 13 / 14">
+                            <div class="custom-event" style="background:transparent;">
+                              <div class="context-container" style="padding:6px;">
+                              <div class="speaker"><span class="name" style="margin-bottom:4px">- Midnight -</span></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 14 / 16">
+                            <div class="custom-event">
+                              <div class="context-container">
+                              <div class="context">
+                              <div class="title">Insomnia Cookies</div>
+                              </div>
+                              <div class="speaker"><span class="name" style="margin-bottom:4px">Your Midnight Snack 🍪</span></div>
+                              <div class="time">
+                                      00:00 ~ 00:30 
+                                    </div>
+                              </div>
+                              </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 16 / 20">
+                            <a class="keynote-event localed-url" href="">
+                              <div class="context-container">
+                              <div class="room">
+                              <div class="room-tag room-2-all"></div>
+                              </div>
+                              <div class="context">
+                              <div class="title">Fun & Challenge: Type Racer Competition</div>
+                              <div class="speaker"><span class="name">Amp up your typing speed⚡</span></div>
+                              </div>
+                              <div class="time">
+                                      01:00 ~ 01:30
+                                    </div>
+                              </div>
+                              </a>
+                          </div>
+
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">  
+                        <div class="schedule-slide d-block">                   
+                        <div class="schedule-timetable-header">
+                          <div class="schedule-timetable-header-column --timeline"></div>
+                          <div class="schedule-timetable-header-column day-1 --room"><h3>🌅 Day 2: Sep. 24 (Sat)</h3></div>
+                        </div>
+                        <div class="schedule-timetable-body">
+                          <div class="timeline" style="grid-row: 1 / 3"><p style="color:white;"> 08:00 </p></div>
+                          <div class="timeline" style="grid-row: 3 / 4"><p style="color:white;"> 09:00 </p></div>
+                          <div class="timeline" style="grid-row: 10 / 11"><p style="color:white;"> 10:30 </p></div>
+                          <div class="timeline" style="grid-row: 22 / 31"><p style="color:white;"> 12:00 </p></div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 1 / 4">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title">Breakfast</div>
+                            </div>
+                            <div class="time">
+                                    08:00 ~ 09:00
+                                  </div>
+                            </div>
+                            </div>
+                          </div>
+                      
+                          <div class="schedule-timetable-body-item event-1" style="grid-row: 10 / 19">
+                            <a class="keynote-event localed-url" href="#Hirschberg">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Speaker: Julia Hirschberg</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner-friendly</span>
+                              <span class="remote-label">#softwaredev</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    10:30 ~ 11:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+                            
+                          <div class="schedule-timetable-body-item event-2" style="grid-row: 10 / 14">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title">Boba Break</div>
+                            </div>
+                            <div class="time">
+                                    10:30 ~ 11:00
+                                  </div>
+                            </div>
+                            </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-1" style="grid-row: 22 / 31">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title"><br>LUNCH</div>
+                            </div>
+                            <div class="time">
+                                    12:00 ~ 13:00
+                            </div>
+                            
+                            </div>
+                            </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-2" style="grid-row: 22 / 28">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="speaker"><span class="name">📢 Projects Due at 12:30!</span></div>
+                            </div>
+                            </div>
+                            </div>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-2" style="grid-row: 28 / 31">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Workshop: Pitch Practices</div>
+                            </div>
+                            <div class="time">
+                                    12:30 ~ 13:00
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item ">  
+                        <div class="schedule-slide d-block">                   
+                        <div class="schedule-timetable-header">
+                          <div class="schedule-timetable-header-column --timeline"></div>
+                          <div class="schedule-timetable-header-column day-1 --room"><h3>🌄 Day 2: Sep. 24 (Sat)</h3></div>
+                        </div>
+                        <div class="schedule-timetable-body">  
+                          <div class="timeline" style="grid-row: 1 / 4"><p style="color:white;"> 13:00 </p></div>
+                          <div class="timeline" style="grid-row: 4 / 7"><p style="color:white;"> 14:00 </p></div>
+                          <div class="timeline" style="grid-row: 7 / 10"><p style="color:white;"> 15:00 </p></div>
+                          <div class="timeline" style="grid-row: 10 / 14"><p style="color:white;"> 15:30 </p></div>
+                          <div class="timeline" style="grid-row: 14 / 17"><p style="color:white;"> 16:30 </p></div>
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 1 / 10">
+                            <a class="keynote-event localed-url" href="">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Presentations &amp; Judging</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner</span>
+                              <span class="remote-label">#python</span>
+                              <span class="remote-label">#web-application</span>
+                            </div> 
+                            </div>
+                            <div class="speaker"><span class="name">Can't wait to see your amazing projects!</span></div>
+                            <div class="time">
+                                    13:00 ~ 15:30
+                            </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 10 / 14">
+                            <a class="keynote-event localed-url" href="#Klein">
+                            <div class="context-container">
+                            <div class="room">
+                            <div class="room-tag room-2-all"></div>
+                            </div>
+                            <div class="context">
+                            <div class="title">Closing Speaker: Lauren Klein</div>
+                            <div class="remote-block">
+                              <span class="remote-label">#beginner-friendly</span>
+                              <span class="remote-label">#softwaredev</span>
+                            </div>
+                            </div>
+                            <div class="time">
+                                    15:30 ~ 16:30
+                                  </div>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="schedule-timetable-body-item event-all" style="grid-row: 14 / 17">
+                            <div class="custom-event">
+                            <div class="context-container">
+                            <div class="context">
+                            <div class="title">Closing Ceremony 🎊</div>
+                            </div>
+                            <div class="time">
+                                    16:30 ~ 17:00
+                            </div>
+                            
+                            </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#scheduleSlide" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#scheduleSlide" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <h2><br><br></h2>  
+            <div class="row section" id="faq">
+                          
+              <div class="content col">
+
+                <div id = "faq-container" class="row">
+                  <h2><b>FREQUENTLY ASKED QUESTIONS</b></h2>
+
+                  <div class="accordion">
+                    <div class="faq-accordion-item col-12" id = "question-1">
+                      <div class="accordion-item-header">
+                        What is DivHacks?
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Our hackathon is an awesome 36-hour long in-person event hosted at Columbia University where people come together to design
+                            something new and bring it to life! There will be lots of learning and workshops, fun
+                            games, speakers, and prizes for you to enjoy throughout the event!
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="faq-accordion-item col-12" id = "question-2">
+                      <div class="accordion-item-header">
+                        Who can attend DivHacks?
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          DivHacks welcomes anyone who is currently a college student, both undergraduate or
+                          graduate! We are trying to provide a safe and empowering space for students who identify as part of an underrepresented group in tech, 
+                          but we welcome everyone who feels they would benefit from this type of space! If you feel this hackathon in not right for you
+                          as a hacker, but you would like to participate in some other way as a mentor, workshop leader, or volunteer, please contact us!
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="faq-accordion-item col-12" id = "question-3">
+                      <div class="accordion-item-header">
+                        Do I need prior experience?
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          Not at all! You do not have to have any experience or even be a CS major. DivHacks
+                          welcomes people of all skill levels, and that includes those who are interested in
+                          learning. Throughout the hackathon, there will be workshops aimed towards beginners
+                          in different areas including workshops for those with no prior programming experience
+                          at all. This year, we especially hope to focus on creating tracks that even people
+                          without any experience can leave the event with a project!
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="faq-accordion-item col-12" id = "question-4">
+                      <div class="accordion-item-header">
+                        Do I need a team to sign up?
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          You do not need to have a team or idea in mind before signing up for DivHacks! If you
+                          have a team already, that's great! Please indicate that on your form. Teams can be a
+                          maximum of 4 people. We will also host a
+                          team building event if you prefer to find people independently!
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="faq-accordion-item col-12" id = "question-5">
+                      <div class="accordion-item-header">
+                        Will there be food and swag?
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          Yes! We have organized catering for all participants, and swag will be available at booths set up onsite!
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="faq-accordion-item col-12" id = "question-6">
+                      <div class="accordion-item-header">
+                        Do I have to submit a project?
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          No, feel free to come to attend workshops, hang out with other hackers, and listen to
+                          speakers.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="faq-accordion-item col-12" id = "question-7">
+                      <div class="accordion-item-header">
+                        Can I volunteer to help out?
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          Yes! If you want to be a mentor, lead a workshop, or help out elsewhere, please <a href="https://forms.gle/8Rfw5pQrPieNVqYg9" class="link" target="_blank">apply!</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="faq-accordion-item col-12" id = "question-8">
+                      <div class="accordion-item-header">
+                        I have other questions...
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          Please email us at <a href="mailto:cu.divhacks@gmail.com" class="link">cu.divhacks@gmail.com</a> if you have any additional questions!
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>  
+                </div>
+              </div>
+            </div>
+
+            <div class="row section" id="sponsors">
+              <div class="content col">
+                <div id = "sponsors-container">
+                  <h2 id="sponsors-title"><b>SPONSORS</b></h2>
+                  <p id="sponsor-msg" class="white-text">If you would like to sponsor this event, please reach out to us at <b>cu.divhacks@gmail.com!</b></p>
+                  
+                  <a class="sp-logo platinum" href="https://www.palantir.com/" target="_blank"><img id="palantir" class="sponsor-img" src="images/sponsors/palantir-logo.png" alt="Palantir" ></a>
+                  <br>
+                  <br>
+                  <a class="sp-logo gold" href="https://www.cs.columbia.edu/" target="_blank"><img id="columbiacs" class="sponsor-img" src="images/sponsors/columbiacs.png" alt="Columbia CS" ></a>
+                  <a class="sp-logo gold" href="https://techacks.ml/" target="_blank"><img id="techacks" class="sponsor-img" src="images/sponsors/techacks-logo.png" alt="TecHacks" ></a>
+                  <br>
+                  <br>
+                  <a class="sp-logo silver" href="https://www.bloomberg.com/" target="_blank"><img id="bloomberg" class="sponsor-img" src="images/sponsors/bloomberg.jpg" alt="Bloomberg" ></a>
+                  <br>
+                  <br>
+                  <a class="sp-logo bronze" href="https://about.facebook.com/" target="_blank"><img id="meta" class="sponsor-img" src="images/sponsors/meta.webp" alt="Meta" ></a>
+                  <a class="sp-logo bronze" href="https://cloud.google.com/" target="_blank"><img id="googlecloud" class="sponsor-img" src="images/sponsors/googleCloud.png" alt="Google Cloud" ></a>
+                  <a class="sp-logo bronze" href="https://www.hudsonrivertrading.com/" target="_blank"><img id="hrt" class="sponsor-img" src="images/sponsors/hrt-logo.png" alt="Hudson River Trading" ></a>
+                  <a class="sp-logo bronze" href="https://www.scm-lp.com/" target="_blank"><img id="scm" class="sponsor-img" src="images/sponsors/scm-logo.svg" alt="Stevens Capital Management" ></a>
+                  <a class="sp-logo bronze" href="http://www.mycheres.com/" target="_blank"><img id="cheres" class="sponsor-img" src="images/sponsors/cheres-logo.svg" alt="Cheres"></a>
+                  <a class="sp-logo bronze" href="http://www.codedex.io/" target="_blank"><img id="codedex" class="sponsor-img" src="images/sponsors/codedex.png" alt="Codedex" ></a>
+                  <a class="sp-logo bronze" href="https://www.echo3d.co/" target="_blank"><img id="echo3D" class="sponsor-img" src="images/sponsors/echo3D.webp" alt="echo3D" ></a>
+                  <a class="sp-logo bronze" href="https://www.leading-learners.com/" target="_blank"><img id="leading-learners" class="sponsor-img" src="images/sponsors/leading-learners-logo.webp" alt="Leading Learners" ></a>
+                  <br>
+                  <br>
+                  <br>
+                  <h3>Institutional Sponsors</h3>
+                  <a class="sp-logo gold" href="https://cs.barnard.edu/" target="_blank"><img id="barnardcs" class="sponsor-img" src="images/sponsors/barnardcs.png" alt="Barnard CS" ></a>
+                  <a class="sp-logo gold" href="https://csc.barnard.edu/" target="_blank"><img id="barnardcsc" class="sponsor-img" src="images/sponsors/barnardcsc.png" alt="Barnard CS" ></a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row section" id="speakers">
+              <h2><b>SPEAKERS</b></h2>
+              <div class="col-md-5 content" id="Agrawal">
+                <div class="bg-transparent-green reveal">
+                  <a href="https://www.bme.columbia.edu/faculty/sunil-agrawal" target="_blank">
+                    <h3 class='text-center'><b>Sunil Agrawal</b></h3>
+                  </a>
+                  <div class="speaker-box">
+                    <img src="images/speakers/agrawal.jpg" class="speaker-img" alt="Agrawal Image">
+                    <div class="speaker-text">Sunil M. Agrawal is a Professor of Mechanical Engineering and Rehabilitation Medicine at Columbia 
+                      University and a pioneering researcher in robotics. As an author of 450 papers, his research 
+                      focuses on innovative robots that help humans re-learn and improve functional movements. At 
+                      Columbia, he directs the Robotics and Rehabilitation (ROAR) Laboratory, where they help people 
+                      with stroke, Parkinson’s disease, and others. Along with rehabilitative robotics, Dr. Agrawal's 
+                      research interests include dynamics and control, differential flatness, and optimization.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5 content" id="Hirschberg">
+                <div class="bg-transparent-green reveal">
+                  <a href="http://www.cs.columbia.edu/~julia/" target="_blank">
+                    <h3 class='text-center'><b>Julia Hirschberg</b></h3>
+                  </a>
+                    <div class="speaker-box">
+                      <img src="images/speakers/hirschberg.jpg" class="speaker-img" alt="Hirschberg Image">
+                      <div class="speaker-text">Julia Hirschberg is Percy K. and Vida L. W. Hudson Professor of Computer Science at Columbia 
+                        University (department chair from 2012-2018). She previously worked at Bell Laboratories and AT&T 
+                        Labs on text-to-speech synthesis (TTs) and then created the first HCI Research Department. She has 
+                        worked for diversity for many years at AT&T and Columbia. She studies speech and NLP, currently 
+                        TTS, false information on social media and its intent, multimodal humor, radicalization in videos, 
+                        and deceptive, trusted, emotional, charismatic, and empathetic speech.
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="col-md-5 content" id="Klein">
+                <div class="bg-transparent-green reveal">
+                  <a href="http://www.cs.columbia.edu/~julia/" target="_blank">
+                    <h3 class='text-center'><b>Lauren Klein</b></h3>
+                  </a>
+                  <div class="speaker-box">
+                    <img src="images/speakers/klein.jpg" class="speaker-img" alt="Klein Image">
+                    <div class="speaker-text">Lauren Klein is Winship Distinguished Research Professor and Associate Professor in the 
+                      departments of English and Quantitative Theory & Methods at Emory University, where she also 
+                      directs the Digital Humanities Lab. She is the author of An Archive of Taste: Race and Eating in 
+                      the Early United States (University of Minnesota Press, 2020) and, with Catherine D’Ignazio, Data 
+                      Feminism (MIT Press, 2020). With Matthew K. Gold, she edits Debates in the Digital Humanities, a 
+                      hybrid print-digital publication stream that explores debates in the field as they emerge.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--
+              <div class="col-md-2"></div>
+              <div class="col-md-5 content">
+                <div class="bg-transparent-green reveal">
+                  <a href="http://www.cs.columbia.edu/~julia/" target="_blank">
+                    <h3 class='text-center'><b>Speaker Name</b></h3>
+                  </a>
+                  <div class="speaker-box">
+                    <img src="images/speakers/klein.jpg" class="speaker-img" alt="Klein Image">
+                    <div class="speaker-text">hello hello helo this is the description for the fourth speaker yayaya 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            -->
+            </div>
+
+            <div class="row" id="apply">
+              <div class="app-sect">
+                <h3>Applications for DivHacks 2022 are now closed! See you next year!</h3>
+              </div>
+            </div>
+          
+        </div>
+        <div class="footer" id="contact">
+          <div class="socials">
+            <a class="social-link link" href="mailto:cu.divhacks@gmail.com" role="button">
+              <i class="bi bi-inbox social-icon" alt="email-link" aria-label="email-link"></i>
+            </a>
+
+            <a class="social-link link" href="http://eepurl.com/gFbUNn" role="button">
+              <i class="bi bi-newspaper social-icon" alt="newsletter-signup" aria-label="newspaper-signup"></i>
+            </a>
+
+            <a class="social-link link" href="https://www.facebook.com/divhacks" role="button">
+              <i class="bi bi-facebook social-icon" alt="facebook-link" aria-label="facebook-link"></i>
+            </a>
+
+            <a class="social-link link" href="https://www.instagram.com/divhacks" role="button">
+              <i class="bi bi-instagram social-icon" alt="instagram-link" aria-label="instagram-link"></i>
+            </a>
+
+            <a class="social-link link" href="https://www.linkedin.com/company/divhacks" role="button">
+              <i class="bi bi-linkedin social-icon" alt="linkedin-link" aria-label="linkedin-link"></i>
+            </a>
+
+            <a class="social-link link" href="https://www.twitter.com/divhacks" role="button">
+              <i class="bi bi-twitter social-icon" alt="twitter-link" aria-label="twitter-link"></i>
+            </a>            
+          </div>
+
+          <div class="footer-msg text-center">
+            <p>Made with <i class="bi bi-heart-fill" alt="heart" aria-label="heart-icon"></i> from the DivHacks team. <br><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" id="mlh-code">MLH Code of Conduct</a></p>
+          </div>
+        </div>
+
+      <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeader => {
+          accordionItemHeader.addEventListener("click", event => {
+
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if(accordionItemHeader.classList.contains("active")) {
+              accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            }
+            else {
+              accordionItemBody.style.maxHeight = 0;
+            }
+            
+          });
+        });
+      </script>
+    </body>
+
+</html>
